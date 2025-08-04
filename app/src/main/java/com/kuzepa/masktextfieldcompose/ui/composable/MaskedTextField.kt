@@ -17,14 +17,14 @@ fun MaskedTextField(
     label: @Composable (() -> Unit),
     modifier: Modifier = Modifier
 ) {
-    val maxDigits = remember { mask.split(delimiters = delimiters).sumOf { it.length } }
+    val maxInputLength = remember { mask.split(delimiters = delimiters).sumOf { it.length } }
 
     TextField(
         label = label,
         value = value,
         onValueChange = { newValue ->
             // Enforce max length
-            onValueChange(newValue.take(maxDigits))
+            onValueChange(newValue.take(maxInputLength))
         },
         visualTransformation = MaskVisualTransformation(
             mask = mask,
