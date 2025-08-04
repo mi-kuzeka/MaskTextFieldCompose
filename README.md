@@ -1,4 +1,9 @@
 # Custom mask for Jetpack Compose TextField
+
+![Date Mask Demo](demo/demo_date.gif)
+![Phpne Number Demo](demo/demo_phone_number.gif)
+![Other Mask Demo](demo/demo_other.gif)
+
 You can use **MaskVisualTransformation** this way for digits-only input:
 ```kotlin
         // An initial value of the input
