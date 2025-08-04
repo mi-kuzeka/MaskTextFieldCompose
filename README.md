@@ -1,5 +1,5 @@
 # Custom mask for Jetpack Compose TextField
-You can use **MaskVisualTransformation** in this way for digits-only input:
+You can use **MaskVisualTransformation** this way for digits-only input:
 ```kotlin
         // An initial value of the input
         var value by remember { mutableStateOf("")}
@@ -27,7 +27,7 @@ You can use **MaskVisualTransformation** in this way for digits-only input:
             ),
         )
 ```
-or in this way for other cases:
+or this way for other cases:
 ```kotlin
         // An initial value of the input
         var value by remember { mutableStateOf("")}
