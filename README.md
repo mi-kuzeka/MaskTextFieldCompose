@@ -4,7 +4,9 @@
 ![Phpne Number Demo](demo/demo_phone_number.gif)
 ![Other Mask Demo](demo/demo_other.gif)
 
-You can use [**MaskVisualTransformation**](app/src/main/java/com/kuzepa/masktextfieldcompose/ui/utils/MaskVisualTransformation.kt) from this repository for **digits-only** input this way:
+You can use [**MaskVisualTransformation**](app/src/main/java/com/kuzepa/masktextfieldcompose/ui/utils/MaskVisualTransformation.kt) from this repository to implement custom mask for TextField.
+
+For **digits-only** input:
 ```kotlin
         // An initial value of the input
         var value by remember { mutableStateOf("")}
@@ -32,7 +34,7 @@ You can use [**MaskVisualTransformation**](app/src/main/java/com/kuzepa/masktext
             ),
         )
 ```
-or this way for **other cases**:
+For **other cases**:
 ```kotlin
         // An initial value of the input
         var value by remember { mutableStateOf("")}
